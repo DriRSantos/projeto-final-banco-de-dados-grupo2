@@ -11,7 +11,7 @@ Professora [@mmondelli](https://github.com/mmondelli)
 
 - [@DriRSantos](https://github.com/DriRSantos/)
 - [@FernandaMeirelles](https://github.com/FernandaMeirelles)
-- [@João Paulo Amaral] (https://github.com/Krymisson)
+- [@João Paulo Amaral](https://github.com/Krymisson)
 - [Mariane Magalhães]
 - [Matheus Borges]
 
