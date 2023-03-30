@@ -166,10 +166,10 @@ UPDATE produto -- alteramos o produto 8 para qtd zero
 SET quantidade_estoque = 0
 WHERE id = 8
 
-SELECT nome, 
-	   CASE WHEN quantidade_estoque IS 0 THEN "Esgotado"
-	   ELSE quantidade_estoque
-	   END AS quantidade_estoque
+SELECT nome,
+	CASE WHEN quantidade_estoque IS 0 THEN "Esgotado"
+	ELSE quantidade_estoque
+	END AS quantidade_estoque
 FROM produto;
 
 UPDATE produto   --adiciona a quantidade em estoque
@@ -183,7 +183,7 @@ WHERE nome LIKE '%a%';
 
 -- lista nome e quantidade_estoque do produto em ordem descrescente e limitado a 3
 SELECT nome,
-	quantidade_estoque
+	   quantidade_estoque
 FROM produto
 ORDER BY quantidade_estoque desc
 LIMIT 3;
@@ -195,7 +195,7 @@ WHERE nome LIKE 'T%';
 
 -- contagem de total de vendas de cada vendedor
 SELECT f.nome AS nome,
-	   COUNT(*) AS total_vendas
+	 COUNT(*) AS total_vendas
 FROM pedido p
 INNER JOIN pedido_produto pp ON p.id = pp.id_pedido
 INNER JOIN produto pro ON pro.id = pp.id_produto
@@ -283,8 +283,8 @@ INNER JOIN pedido p ON c.id = p.id_cliente
 INNER JOIN pedido_produto pp ON p.id = pp.id_pedido
 INNER JOIN produto pro ON pro.id = pp.id_produto
 WHERE p.id IN (SELECT id
-			   FROM cliente
-			   WHERE nome LIKE 'M%')
+				FROM cliente
+				WHERE nome LIKE 'M%')
 ORDER BY p.data_pedido DESC;
 
 --- SQL para gerar nota fical por número do pedido --
