@@ -2,6 +2,7 @@
 # BD serratec 2023
 
 Projeto final banco de dados Serratec 2023
+E-commerce tradicional
 
 Desenvolvido com DBeaver e SQLite.
 
@@ -10,7 +11,7 @@ Professora [@mmondelli](https://github.com/mmondelli)
 
 - [@DriRSantos](https://github.com/DriRSantos/)
 - [@FernandaMeirelles](https://github.com/FernandaMeirelles)
-- [João Paulo Amaral]
+- [@João Paulo Amaral] (https://github.com/Krymisson)
 - [Mariane Magalhães]
 - [Matheus Borges]
 
